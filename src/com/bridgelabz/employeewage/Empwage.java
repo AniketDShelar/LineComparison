@@ -8,16 +8,16 @@ public class Empwage {
 	public static void main(String[] args) {
 		int emphrs = 0;
 		int empwage = 0;
-		int empcheck =(int)Math.floor(Math.random() * 10) % 3;
-		switch (empcheck) {
-		case IS_FULL_TIME:
-		emphrs = 8;
-		break;
-		case IS_PART_TIME:
+		double empcheck = Math.floor(Math.random() * 10) % 3;
+		if (empcheck == IS_FULL_TIME) {
+			emphrs = 8;
+			System.out.println("Employee is present as full time");
+		} else if (empcheck == IS_PART_TIME) {
 			emphrs = 4;
-			break;
-		default:
-		emphrs = 0;
+			System.out.println("Employee is present as part time");
+		} else {
+			emphrs = 0;
+			System.out.println("Employee is absent");
 		}
 		  empwage = emphrs * wageperhour;
 		  System.out.println("Employee wage is = "+empwage);
