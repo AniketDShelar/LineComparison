@@ -23,13 +23,10 @@ public class Empwage {
 				emphrs = 0;
 			}
 			totalworkinghrs += emphrs;
-			for (int i = 0; i <= 20; i++)
-			System.out.println("Day " +i+ " working hour = " +emphrs);
+			System.out.println("Day#: " +totalworkingdays+  " working hour = " +emphrs);
 		}
 		empwage = totalworkinghrs * wageperhour;
 		totalempwage += empwage;
-		System.out.println("total days = "+totalworkingdays);
-		System.out.println("Employeewage = " + empwage);
 		System.out.println("Total Employee wage = " + totalempwage);
 	}
 }
